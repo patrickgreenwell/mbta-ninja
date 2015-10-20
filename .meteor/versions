@@ -42,9 +42,8 @@ minimongo@1.0.8
 mobile-status-bar@1.0.3
 momentjs:moment@2.10.2
 mongo@1.1.0
-mrt:moment@2.8.1
-npm-container@1.0.0
 nimble:restivus@0.6.3
+npm-container@1.0.0
 observe-sequence@1.0.6
 ordered-dict@1.0.3
 percolate:synced-cron@1.2.0
