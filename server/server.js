@@ -47,3 +47,19 @@ SyncedCron.start();
 Meteor.publish('reports', function () {
   return Reports.find({expired: false});
 });
+
+GTFS.importFromZip("MBTA","assets\\app\\MBTA_gtfs.zip",{
+            importFiles:['agency'
+            ,'calendar_dates'
+            ,'calendar'
+            ,'fare_attributes'
+            ,'fare_rules'
+            ,'feed_info'
+            ,'frequencies'
+            ,'routes'
+            ,'stops'
+            ,'transfers'
+            ,'trips'
+            ],
+            overwriteAgency: true 
+        });
