@@ -40,6 +40,10 @@ SyncedCron.add({
     console.log(activeRemaining + ' active reports remaining.');
   }
 });
+SyncedCron.config({
+    // Log job run details to console
+    log: false
+  });
 
 SyncedCron.start();
 
@@ -47,19 +51,20 @@ SyncedCron.start();
 Meteor.publish('reports', function () {
   return Reports.find({expired: false});
 });
-
 GTFS.importFromZip("MBTA","assets\\app\\MBTA_gtfs.zip",{
-            importFiles:['agency'
-            ,'calendar_dates'
-            ,'calendar'
-            ,'fare_attributes'
-            ,'fare_rules'
-            ,'feed_info'
-            ,'frequencies'
-            ,'routes'
-            ,'stops'
-            ,'transfers'
-            ,'trips'
-            ],
-            overwriteAgency: true 
-        });
+  importFiles:[
+  'agency'
+  ,'calendar_dates'
+  ,'calendar'
+  ,'fare_attributes'
+  ,'fare_rules'
+  ,'feed_info'
+  ,'frequencies'
+  ,'routes'
+  ,'stops'
+  ,'shapes'
+  ,'transfers'
+  ,'trips'
+  ],
+  overwriteAgency: false 
+});
