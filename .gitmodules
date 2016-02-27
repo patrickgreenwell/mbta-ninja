@@ -1,0 +1,3 @@
+[submodule "packages/meteor-gtfs"]
+	path = packages/meteor-gtfs
+	url = https://github.com/patrickgreenwell/meteor-gtfs.git
