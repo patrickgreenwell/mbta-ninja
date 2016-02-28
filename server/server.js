@@ -51,6 +51,8 @@ SyncedCron.start();
 Meteor.publish('reports', function () {
   return Reports.find({expired: false});
 });
+
+console.log('Calling GTFS Zip');
 GTFS.importFromZip("MBTA","assets\\app\\MBTA_gtfs.zip",{
   importFiles:[
   'agency'
