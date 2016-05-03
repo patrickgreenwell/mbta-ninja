@@ -1,0 +1,24 @@
+{
+  "name": "mbta-ninja",
+  "version": "1.0.0",
+  "description": "MBTA Ninja is a crowdsourced alerting system for public transit in Boston.",
+  "main": "server.js",
+  "dependencies": {
+    "gtfs": "^0.4.4",
+    "meteor-node-stubs": "^0.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeforboston/mbta-ninja.git"
+  },
+  "author": "CodeForBoston",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codeforboston/mbta-ninja/issues"
+  },
+  "homepage": "https://github.com/codeforboston/mbta-ninja#readme"
+}

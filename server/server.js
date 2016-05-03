@@ -47,3 +47,8 @@ SyncedCron.start();
 Meteor.publish('reports', function () {
   return Reports.find({expired: false});
 });
+
+import gtfs from gtfs;
+var gtfs_download = require('gtfs/scripts/download.js');
+
+gtfs_download.main({})
